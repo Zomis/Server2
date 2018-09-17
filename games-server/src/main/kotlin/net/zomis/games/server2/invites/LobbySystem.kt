@@ -25,7 +25,11 @@ class LobbySystem {
             clientData.setForClient(ClientInterestingGames(gameTypes, maxGames, mutableSetOf()), it.client)
             // set interesting games
             // set max number of concurrent games (defaults to 1, -1 = Infinite)
+
+            // send information to other clients
         })
+
+        // client disconnect: broadcast to all other clients
 
         events.listen("Lobby mark player as in game", GameStartedEvent::class, {true}, { gameEvent ->
             gameEvent.game.players.map(clientData::get).forEach { it?.currentGames?.add(gameEvent.game) }
