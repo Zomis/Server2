@@ -2,15 +2,14 @@ package net.zomis.games.server2.ais
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import net.zomis.core.events.EventSystem
-import net.zomis.games.server2.Client
-import net.zomis.games.server2.ClientConnected
-import net.zomis.games.server2.ClientJsonMessage
-import net.zomis.games.server2.ClientLoginEvent
+import net.zomis.games.server2.*
 import net.zomis.games.server2.games.Game
 import net.zomis.games.server2.games.MoveEvent
 import net.zomis.games.server2.games.PlayerGameMoveRequest
 import net.zomis.games.server2.invites.InviteEvent
 import net.zomis.games.server2.invites.InviteResponseEvent
+
+data class AICreatedEvent(val ai: ServerAI)
 
 class ServerAI(val gameType: String, val name: String, val perform: (Game, Int) -> List<PlayerGameMoveRequest>) {
     fun register(events: EventSystem) {
@@ -41,6 +40,7 @@ class ServerAI(val gameType: String, val name: String, val perform: (Game, Int) 
             "gameTypes" to listOf(gameType), "maxGames" to 100
         )))
         events.execute(ClientJsonMessage(client, interestingGames))
+        events.execute(AICreatedEvent(this))
     }
 
     val client = Client()
