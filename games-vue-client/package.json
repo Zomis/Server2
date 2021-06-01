@@ -29,7 +29,7 @@
     "vue-babylonjs": "1.0.0-beta.7",
     "vue-cookie-law": "1.13.3",
     "vue-router": "3.3.2",
-    "vuetify": "2.4.9",
+    "vuetify": "2.5.2",
     "vuex": "3.4.0"
   },
   "devDependencies": {
