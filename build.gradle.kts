@@ -2,7 +2,7 @@ import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 
 plugins {
     kotlin("multiplatform") version "1.4.32"
-    id("com.github.johnrengelman.shadow") version "5.2.0"
+    id("com.github.johnrengelman.shadow") version "7.0.0"
 }
 
 group = "net.zomis"
@@ -73,12 +73,12 @@ kotlin {
                 implementation("org.java-websocket:Java-WebSocket:1.5.2")
                 implementation("log4j:log4j:1.2.17")
                 implementation("org.slf4j:slf4j-log4j12:1.7.30")
-                implementation("io.javalin:javalin:2.8.0")
+                implementation("io.javalin:javalin:3.13.7")
                 implementation("com.github.kittinunf.fuel:fuel:2.3.1")
                 implementation("com.amazonaws:aws-java-sdk-dynamodb:1.11.1000")
                 implementation("org.postgresql:postgresql:42.2.19")
-                implementation("com.zaxxer:HikariCP:3.4.5")
-                implementation("com.github.ben-manes.caffeine:caffeine:2.9.0")
+                implementation("com.zaxxer:HikariCP:4.0.3")
+                implementation("com.github.ben-manes.caffeine:caffeine:3.0.2")
 
                 implementation("ai.djl:api:0.3.0")
                 implementation("ai.djl:model-zoo:0.3.0")
