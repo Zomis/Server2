@@ -76,7 +76,7 @@ kotlin {
                 implementation("io.javalin:javalin:2.8.0")
                 implementation("com.github.kittinunf.fuel:fuel:2.3.1")
                 implementation("com.amazonaws:aws-java-sdk-dynamodb:1.11.1000")
-                implementation("org.postgresql:postgresql:42.2.19")
+                implementation("org.postgresql:postgresql:42.2.20")
                 implementation("com.zaxxer:HikariCP:3.4.5")
                 implementation("com.github.ben-manes.caffeine:caffeine:2.9.0")
 
