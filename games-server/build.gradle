@@ -64,7 +64,7 @@ dependencies {
     compile "com.github.lewik.klog:klog-jvm:$klog_version"
     compile "io.javalin:javalin:2.8.0"
     compile "com.github.kittinunf.fuel:fuel:2.3.1"
-    compile group: 'com.amazonaws', name: 'aws-java-sdk-dynamodb', version: '1.11.1000'
+    compile group: 'com.amazonaws', name: 'aws-java-sdk-dynamodb', version: '1.11.1031'
     compile group: 'org.postgresql', name: 'postgresql', version: '42.2.19'
     compile 'com.zaxxer:HikariCP:3.4.5'
     compile 'com.github.ben-manes.caffeine:caffeine:2.9.0'
