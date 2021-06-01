@@ -68,10 +68,10 @@ dependencies {
     compile group: 'org.postgresql', name: 'postgresql', version: '42.2.19'
     compile 'com.zaxxer:HikariCP:3.4.5'
     compile 'com.github.ben-manes.caffeine:caffeine:2.9.0'
-    compile group: 'ai.djl', name: 'api', version: '0.3.0'
-    compile group: 'ai.djl', name: 'model-zoo', version: '0.3.0'
-    runtime group: 'ai.djl.mxnet', name: 'mxnet-engine', version: '0.3.0'
-    runtime group: 'ai.djl.mxnet', name: 'mxnet-native-auto', version: '1.6.0'
+    compile group: 'ai.djl', name: 'api', version: '0.11.0'
+    compile group: 'ai.djl', name: 'model-zoo', version: '0.11.0'
+    runtime group: 'ai.djl.mxnet', name: 'mxnet-engine', version: '0.11.0'
+    runtime group: 'ai.djl.mxnet', name: 'mxnet-native-auto', version: '1.8.0'
 
     testCompile "org.junit.jupiter:junit-jupiter-api:$jupiter_version"
     testCompile "org.junit.jupiter:junit-jupiter-params:$jupiter_version"

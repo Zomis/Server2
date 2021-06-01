@@ -80,10 +80,10 @@ kotlin {
                 implementation("com.zaxxer:HikariCP:3.4.5")
                 implementation("com.github.ben-manes.caffeine:caffeine:2.9.0")
 
-                implementation("ai.djl:api:0.3.0")
-                implementation("ai.djl:model-zoo:0.3.0")
-                runtimeOnly("ai.djl.mxnet:mxnet-engine:0.3.0")
-                runtimeOnly("ai.djl.mxnet:mxnet-native-auto:1.6.0")
+                implementation("ai.djl:api:0.11.0")
+                implementation("ai.djl:model-zoo:0.11.0")
+                runtimeOnly("ai.djl.mxnet:mxnet-engine:0.11.0")
+                runtimeOnly("ai.djl.mxnet:mxnet-native-auto:1.8.0")
             }
         }
         val jvmTest by getting {
