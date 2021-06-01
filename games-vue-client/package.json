@@ -24,7 +24,7 @@
     "npm-check-updates": "6.0.1",
     "v-clipboard": "2.2.3",
     "vue": "2.6.11",
-    "vue-authenticate": "1.4.1",
+    "vue-authenticate": "1.5.0",
     "vue-axios": "2.1.5",
     "vue-babylonjs": "1.0.0-beta.7",
     "vue-cookie-law": "1.13.3",
