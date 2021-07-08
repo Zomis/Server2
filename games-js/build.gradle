@@ -29,7 +29,7 @@ dependencies {
     expectedBy project(':games-core')
 
     compile "com.github.lewik.klog:klog-js:$klog_version"
-    compile "org.jetbrains.kotlinx:kotlinx-coroutines-core-js:1.4.3"
+    compile "org.jetbrains.kotlinx:kotlinx-coroutines-core-js:1.5.0"
 }
 
 compileKotlin2Js {

@@ -38,7 +38,7 @@ kotlin {
             resources.srcDir("games-core/src/main/resources")
             dependencies {
                 implementation(kotlin("stdlib-common"))
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.3")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0")
 //                implementation("com.github.lewik.klog:klog-metadata:2.0.2")
             }
         }
@@ -52,7 +52,7 @@ kotlin {
             kotlin.srcDir("games-server/src/main/kotlin")
             resources.srcDir("games-server/src/main/resources")
             dependencies {
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.4.3")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.5.0")
                 implementation("com.github.lewik.klog:klog-jvm:2.0.2")
                 implementation(kotlin("reflect"))
 
@@ -94,13 +94,13 @@ kotlin {
                 implementation("org.junit.jupiter:junit-jupiter-api:$jupiterVersion")
                 implementation("org.junit.jupiter:junit-jupiter-params:$jupiterVersion")
                 runtimeOnly("org.junit.jupiter:junit-jupiter-engine:$jupiterVersion")
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.3")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.5.0")
             }
         }
         val jsMain by getting {
             kotlin.srcDir("games-js/src/main/kotlin")
             dependencies {
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-js:1.4.3")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-js:1.5.0")
                 implementation("com.github.lewik.klog:klog-js:2.0.2")
             }
         }
