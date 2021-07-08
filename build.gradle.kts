@@ -15,7 +15,7 @@ repositories {
 }
 
 val jacksonVersion = "2.12.3"
-val jupiterVersion = "5.7.1"
+val jupiterVersion = "5.7.2"
 
 kotlin {
     jvm {

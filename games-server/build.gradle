@@ -1,6 +1,6 @@
 buildscript {
     ext.kotlin_version = "1.4.32"
-    ext.jupiter_version = "5.7.1"
+    ext.jupiter_version = "5.7.2"
     ext.jackson_version = "2.12.3"
     ext.klog_version = '2.0.2'
 
